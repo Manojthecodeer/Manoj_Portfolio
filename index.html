@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manoj Kumar A — Cyber Security Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Background Grid -->
+  <div class="bg-grid"></div>
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-bracket">[</span>MK<span class="logo-bracket">]</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Available for hire
+      </div>
+      <h1 class="hero-name reveal">
+        <span class="gradient-text">Manoj</span><br>
+        <span class="gradient-text">Kumar A</span>
+      </h1>
+      <p class="hero-role reveal">
+        <span class="role-text" id="roleText"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-tagline reveal">Building secure systems. Writing clean code. Breaking things ethically.</p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Years Learning</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Breaches Undetected</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-terminal reveal">
+      <div class="terminal-header">
+        <span class="t-dot t-red"></span>
+        <span class="t-dot t-yellow"></span>
+        <span class="t-dot t-green"></span>
+        <span class="t-title">~/manoj — zsh</span>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <div class="t-line"><span class="t-prompt">❯</span> <span class="t-cmd">whoami</span></div>
+        <div class="t-line t-out">manoj_kumar_a</div>
+        <div class="t-line"><span class="t-prompt">❯</span> <span class="t-cmd">cat skills.txt</span></div>
+        <div class="t-line t-out">CyberSecurity | Java | Wireshark</div>
+        <div class="t-line t-out">Network Analysis | AI/ML | MITM</div>
+        <div class="t-line"><span class="t-prompt">❯</span> <span class="t-cmd">nmap --top-ports 10 localhost</span></div>
+        <div class="t-line t-out t-green-text">PORT     STATE  SERVICE</div>
+        <div class="t-line t-out">22/tcp   open   ssh</div>
+        <div class="t-line t-out">443/tcp  open   https</div>
+        <div class="t-line t-out t-dim">8080/tcp open   dev-server</div>
+        <div class="t-line"><span class="t-prompt">❯</span> <span class="t-cursor-line">█</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-container">
+      <div class="section-label reveal">// about.md</div>
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+           Pursuing B.E Computer science Engineering specialization in cybersecurity<br>
+          Amrita vishwa vidyapeetham | Graduating 2027
+          </p>
+          <p>
+            I'm a <strong>Cyber Security Engineer</strong> and <strong>Java Developer</strong> passionate about 
+            building systems that are both robust and resilient. My work sits at the intersection of 
+            offensive security research and software engineering — I understand how systems are broken 
+            so I can build them stronger.
+          </p>
+          <p>
+            With hands-on experience in network protocol analysis, MITM attack vectors, and application 
+            security, I bring a defender's mindset to every project. On the development side, I architect 
+            clean Java applications that prioritize security from the ground up.
+          </p>
+          <p>
+            When I'm not analyzing packet captures or writing backend logic, I'm exploring AI-powered 
+            security tooling — the next frontier in automated threat detection.
+          </p>
+          <div class="skill-tags reveal">
+            <span class="tag">Java</span>
+            <span class="tag">Wireshark</span>
+            <span class="tag">Network Security</span>
+            <span class="tag">MITM Analysis</span>
+            <span class="tag">AI/ML</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Python</span>
+            <span class="tag">TCP/IP</span>
+          </div>
+        </div>
+        <div class="about-card-wrap reveal">
+          <div class="glass-card about-card">
+            <div class="about-card-item">
+              <div class="aci-icon">🛡️</div>
+              <div>
+                <div class="aci-title">Security First</div>
+                <div class="aci-desc">Threat modeling & vulnerability assessment</div>
+              </div>
+            </div>
+            <div class="about-card-item">
+              <div class="aci-icon">⚙️</div>
+              <div>
+                <div class="aci-title">Java Engineering</div>
+                <div class="aci-desc">Desktop apps, OOP design, clean architecture</div>
+              </div>
+            </div>
+            <div class="about-card-item">
+              <div class="aci-icon">🔬</div>
+              <div>
+                <div class="aci-title">Research Driven</div>
+                <div class="aci-desc">Network forensics & protocol analysis</div>
+              </div>
+            </div>
+            <div class="about-card-item">
+              <div class="aci-icon">🤖</div>
+              <div>
+                <div class="aci-title">AI Integration</div>
+                <div class="aci-desc">Applying ML to security tooling</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-container">
+      <div class="section-label reveal">// projects.json</div>
+      <h2 class="section-title reveal">Featured Projects</h2>
+      <p class="section-sub reveal">A selection of work that reflects my security + development focus.</p>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Dynamically rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-container">
+      <div class="section-label reveal">// contact.sh</div>
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <p class="section-sub reveal">Have a project, security concern, or just want to connect? I'm open to it.</p>
+      <div class="contact-wrap reveal">
+        <div class="glass-card contact-card">
+          <div class="contact-email">
+            <div class="contact-label">Primary Contact</div>
+            <a href="mailto:manojarulkumar14@email.com" class="contact-email-link">
+              <span class="email-icon">✉</span>
+              manojkumar@email.com
+            </a>
+          </div>
+          <div class="contact-divider"></div>
+          <div class="contact-socials">
+            <div class="contact-label">Find me on</div>
+            <div class="social-links">
+             <a href="https://github.com/Manojcodeer" target="_blank" class="social-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+             </svg>
+             GitHub
+             </a>
+
+<a href="https://www.linkedin.com/in/manoj-kumar-a-b425502a4?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-btn">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+  </svg>
+  LinkedIn
+</a>
+            </div>
+          </div>
+          <div class="contact-divider"></div>
+          <div class="contact-availability">
+            <span class="avail-dot"></span>
+            <span>Currently open to new opportunities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo"><span class="logo-bracket">[</span>MK<span class="logo-bracket">]</span></span>
+      <span class="footer-copy">Designed & built by Manoj Kumar A · 2025</span>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
